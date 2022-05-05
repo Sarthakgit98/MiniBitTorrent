@@ -23,26 +23,47 @@ Developed using socket programming, system calls and multithreading
 ### Commands:
 
 #### 1. Tracker:
+  
   a. Run Tracker: ./tracker tracker_info.txt tracker_no tracker_info.txt - Contains ip, port details of all the trackers\n
+  
   b. Close Tracker: quit\n
   
 #### 2. Client:
-  a. Run Client: ./client <IP>:<PORT> tracker_info.txt tracker_info.txt - Contains ip, port details of all the trackers\n
-  b. Create User Account: create_user <user_id> <passwd>\n
-  c. Login: login <user_id> <passwd>\n
-  d. Create Group: create_group <group_id>\n
-  e. Join Group: join_group <group_id>\n
-  f. Leave Group: leave_group <group_id>\n
-  g. List pending join: requests list_requests <group_id>\n
-  h. Accept Group Joining Request: accept_request <group_id> <user_id>\n
-  i. List All Group In Network: list_groups\n
-  j. List All sharable Files In Group: list_files <group_id>\n
-  k. Upload File: upload_file <file_path> <group_id>\n
-  l. Download File: download_file <group_id> <file_name> <destination_path>\n
-  m. Logout: logout\n
-  n. Show_downloads: show_downloads\n
-     Output format:\n
-        [D] [grp_id] filename\n
-        [C] [grp_id] filename\n
-     D(Downloading), C(Complete)\n
-  o. Stop sharing: stop_share <group_id> <file_name>\n
+
+  a. Run Client: ./client <IP>:<PORT> tracker_info.txt tracker_info.txt - Contains ip, port details of all the trackers
+  
+  b. Create User Account: create_user <user_id> <passwd>
+  
+  c. Login: login <user_id> <passwd>
+  
+  d. Create Group: create_group <group_id>
+  
+  e. Join Group: join_group <group_id>
+  
+  f. Leave Group: leave_group <group_id>
+  
+  g. List pending join: requests list_requests <group_id>
+  
+  h. Accept Group Joining Request: accept_request <group_id> <user_id>
+  
+  i. List All Group In Network: list_groups
+  
+  j. List All sharable Files In Group: list_files <group_id>
+  
+  k. Upload File: upload_file <file_path> <group_id>
+  
+  l. Download File: download_file <group_id> <file_name> <destination_path>
+  
+  m. Logout: logout
+  
+  n. Show_downloads: show_downloads
+  
+  Output format:
+  
+        [D] [grp_id] filename
+  
+        [C] [grp_id] filename
+     
+  D(Downloading), C(Complete)
+  
+  o. Stop sharing: stop_share <group_id> <file_name>
